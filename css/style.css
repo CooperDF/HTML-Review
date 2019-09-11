@@ -7,19 +7,43 @@ html, body {
 	min-height: 100%;
 }
 
+@keyframes select{
+	0% {
+		background-color: none;
+		left: 0;
+		top: 0;
+	}
+	100% {
+		background-color: #34D1BF;
+		left: 100%;
+		top: 0;
+	}
+}
+
 .icon {
-	margin: 0;
-	width: 100%;
-	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px; 	
+}
+
+.icon:hover {
+	filter: contrast(2);
 }
 
 .navbar{
-	width: 12.5%;
-	background-color: purple;
-	height: 100;
+	max-width: 300px;
+	margin: 0;
+	background-color: #B0228C;
+	height: 100vh;
+}
+
+.menu {
+	text-align: center;
 }
 
 a{
+	width: 100%;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 27px;
 	color: yellow;
@@ -27,13 +51,19 @@ a{
 }
 
 a:hover {
-	color: pink;
+	color: #FF5BA7;
 }
 
 ul{
 	list-style: none;
+	padding-left: 0;
 }
 
 li{
-	margin: 25px;
+	margin: 20px;
+}
+
+li:hover {
+	animation-name: select;
+	animation-duration: 1s;
 }
