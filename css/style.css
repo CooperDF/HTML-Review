@@ -11,13 +11,13 @@ html, body {
 @keyframes select{
 	0% {
 		background-color: none;
-		clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 50% 100%);
+		clip-path: polygon(0% 0%, 100% 75%, 0% 100%, 50% 100%, 25% 75%, 75% 25%);
 		left: 0;
 		top: 0;
 	}
 	100% {
 		background-color: #34D1BF;
-		clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 50% 100%);
+		clip-path: polygon(0% 0%, 100% 75%, 0% 100%, 50% 100%, 25% 75%, 75% 25%);
 		left: 100%;
 		top: 0;
 	}
@@ -56,6 +56,8 @@ a{
 
 a:hover {
 	color: #FF5BA7;
+	filter: contrast(2);
+	filter: saturate(5);
 }
 
 ul{
@@ -64,6 +66,7 @@ ul{
 }
 
 li{
+	border: 25px;
 	margin: 20px;
 }
 
